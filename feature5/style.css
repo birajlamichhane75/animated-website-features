@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Russo+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Russo One', sans-serif;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns:4fr 3fr;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+#left{
+
+position: relative;
+}
+#left .text{
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15vw;
+    margin-right: 1vw;
+    text-align: justify;
+
+}
+#left h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 2.8rem;
+    font-weight: 900;
+    color: white;
+    
+}
+#left h1:nth-child(2){
+
+    margin-bottom: 20px;
+}
+
+#left p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: rgb(207, 167, 167);
+
+}
+
+.parent{
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+}
+.parent .child{
+    display: inline-block;
+
+}
+
+#right{
+    position: relative;
+
+    display: flex;
+    gap:20px
+}
+#right .first{
+    position: absolute;
+    left: 0%;
+    top:0%;
+    height: 100%;
+    width: 135px;
+}
+
+#right .second{
+    top:-45%;
+    position: absolute;
+    left: 25%;
+    height: 100%;
+    width: 135px;
+
+}
+
+#right .card{
+    width: 100%;
+    height: 35%;
+    border-radius: 8px;
+    background-color: black;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+#right .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sec-2{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffa1a1;
+}
