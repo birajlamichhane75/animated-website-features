@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#nav{
+    height: 80px;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4vw;
+}
+
+.left h3{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4vw
+}
+.center a{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.right button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding:10px 20px;
+    border-radius: 50px;
+    background-color: rgb(125, 194, 171);
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#page1{
+    height:80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: -10vh;
+}
+#page1 .btn{
+    background-color: rgb(106, 165, 145);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 18px;
+    gap:2vw
+}
+
+#page1 .btn img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#page1 .btn i{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+    perspective: 900px;
+}
+
+.image{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotateX(30deg);
+    filter: blur(4px);
+}
