@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Libre+Baskerville&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Libre Baskerville';
+}
+main{
+    background-color: #c5ffcd;
+}
+#nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.container{
+    height:90vh;
+    width: 100%;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.container h1{
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 85px;
+}
+.container .box{
+    text-align: center;
+
+}
+.container #last{
+    font-family:'Black Ops One';
+    font-weight: 100;
+}
+
+.imgbox{
+    position: absolute;
+    height:190px;
+    width: 120px;
+    /* background-color: yellow; */
+    overflow: hidden;
+
+}
+.imgbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translateY(100%);
+}
